@@ -1,3 +1,17 @@
+# In recursion, space is carved out in the stack for the function's arguments and local variables,
+# - The function's arguments are copied into this space
+# - Control jumps to the function
+# - The function's control runs
+# - The function's result is copied into a return value
+# - The stack is rewound to its previous position
+# - Control jumps back to where the function was called
+# Doing all these steps takes time, often longer than it takes to iterate through a loop.
+# When many programs start, they allocate a single chunk of memory for their stack, and when
+# they run out of that memory (often, but not always due to recursion), the program crashes due to a
+# stack overflow. Therefore, since ruby has such a great library of enumerable methods, iterative loops
+# are usually a preferable option to recursion. However, as will be shown below, this isn't always the
+# case. Furthermore, some problems can only be solved with recurison.
+
 (1 + 2 + 3 + 4)
 
 def sum_upto(q)
