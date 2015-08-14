@@ -153,3 +153,18 @@ end
 # p fib_jai(20)
 
 
+def fib_calculate(number)
+  numbers=[0,1]
+  (number-2).times do |i|
+    total = numbers[i]+numbers[i+1]
+    numbers.push(total)
+  end
+
+  numbers.map{|uno| uno.to_s.rjust(numbers.last.to_s.length+1," ")}.
+      each_slice(5){|due| puts due.join", "}
+end
+
+# p fib_calculate(20)
+
+
+
