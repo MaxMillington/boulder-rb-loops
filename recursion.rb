@@ -146,7 +146,7 @@ end
 
 
 
-
+# Fibonacci using linear algebra
 
 def matrix_fibonacci(num)
   if num == 1
