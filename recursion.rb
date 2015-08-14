@@ -21,7 +21,7 @@ def sum_upto(q)
   return sum_upto(3) + 4 if q == 4
 end
 
-p sum_upto(4)
+# p sum_upto(4)
 
 
 
@@ -32,7 +32,7 @@ def second_sum_upto(q)
   second_sum_upto(q-1) + q
 end
 
-p second_sum_upto(100)
+# p second_sum_upto(100)
 
 
 
@@ -45,7 +45,7 @@ def plug_in(array, n)
   array
 end
 
-p plug_in([], 5)
+# p plug_in([], 5)
 
 
 
@@ -57,7 +57,7 @@ def plug(array, n)
   plug(array, n-1)
 end
 
-p plug([], 7)
+# p plug([], 7)
 
 # array =  [], [7], [7,6], [7,6,5], [7,6,5,4], [7,6,5,4,3], [7,6,5,4,3,2], [7,6,5,4,3,2,1], [7,6,5,4,3,2,1,0]
 # n     =  7,  6,   5,     4,       3,         2,           1,             0
@@ -72,7 +72,7 @@ def reverse_plug_in(array, n)
 end
 
 
-p reverse_plug_in([], 5)
+# p reverse_plug_in([], 5)
 
 
 
@@ -86,7 +86,14 @@ def reverse_plug(array, n)
   array.reverse
 end
 
-p reverse_plug([], 7)
+# p reverse_plug([], 7)
+
+
+
+
+
+
+
 
 
 
@@ -96,7 +103,7 @@ def reverse_plug2(array, n)
   array << n
 end
 
-p reverse_plug2([], 7)
+# p reverse_plug2([], 7)
 
 
 
@@ -119,11 +126,26 @@ end
 # p fibonacci(20)
 
 
+
+
+
+
+
+
+
+
+
 def fib_array(n)
   [0, 1, 1][n] ||= fib_array(n-2) + fib_array(n-1)
 end
 
-# p fib_array(100)
+# p fib_array(20)
+
+
+
+
+
+
 
 
 def matrix_fibonacci(num)
@@ -137,20 +159,32 @@ def matrix_fibonacci(num)
   end
 end
 
-# p matrix_fib(100000)
+# p matrix_fibonacci(100000)
+
+
+
+
+
+
 
 def fib_jai(quantity)
-  @sequence = (1..quantity).reduce([0]) do |fibs, num|
+  (1..quantity).reduce([0]) do |fibs, num|
     if num > 1
       fibs << fibs[-1] + fibs[-2]
     else
       fibs << 1
     end
-  end
+  end.last
 end
 
 
-# p fib_jai(20)
+# p fib_jai(1000)
+
+
+
+
+
+
 
 
 def fib_calculate(number)
@@ -159,9 +193,7 @@ def fib_calculate(number)
     total = numbers[i]+numbers[i+1]
     numbers.push(total)
   end
-
-  numbers.map{|uno| uno.to_s.rjust(numbers.last.to_s.length+1," ")}.
-      each_slice(5){|due| puts due.join", "}
+  numbers.last
 end
 
 # p fib_calculate(20)
