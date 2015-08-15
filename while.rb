@@ -12,11 +12,23 @@ while number < 10
   number += 1
 end
 
+# The "while" modifier can initialize the loop or be added to the end by using
+# 'begin.' However, here the code is executed before the conditional is evaluated.
+
+number = 1
+
+begin
+  p "#{number} is a number less than 10."
+  number += 1
+end while number < 10
 
 
-
-
-
+# DEAF GRANDMA EXERCISE
+# If you don't input anything (just hit enter) she responds with WHAT?!
+# If you ask a question with all lower-case letters, she responds with SPEAK UP, KID!
+# If you ask a question in all upper-case letters, she responds with NO, NOT SINCE 1946!
+# The first time you say GOODBYE! she says LEAVING SO SOON?
+# The second time you say GOODBYE! she says LATER, SKATER! and the program exits.
 
 
 bye_counter = 0
@@ -44,6 +56,5 @@ while ready_to_quit == false
 end
 
 puts "LATER, SKATER!"
-
 
 

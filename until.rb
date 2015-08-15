@@ -1,3 +1,7 @@
+# Ruby's until loop works just like the while loop only it executes code while the condition
+# is false as opposed to true.
+
+
 
 number = 1
 
@@ -6,9 +10,14 @@ until number == 10
   number += 1
 end
 
+# And with a begin statement.
 
+number = 1
 
-
+begin
+  p "#{number} is a number less than 10."
+  number += 1
+end until number == 10
 
 
 
