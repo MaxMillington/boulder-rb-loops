@@ -22,30 +22,6 @@ animals.each do |animal|
   # puts "Animal: #{animal}"
 end
 
-
-# All of Ruby's enumerable methods can be recreated with simple for loops. For example, here
-# is "find."
-
-@words = ["capricious", "berry", "unicorn", "bag", "apple", "festering", "pretzel", "pencil"]
-@found = nil
-for word in @words
-  if word.length == 7
-    @found = word
-    break
-  end
-end
-
-# p @found
-
-
-words = ["capricious", "berry", "unicorn", "bag", "apple", "festering", "pretzel", "pencil"]
-
-found = words.find do |word|
-  word.length == 7
-end
-
-# p found
-
 # Relevant statements:
 
 # Break terminates the internal loop
@@ -89,3 +65,48 @@ end
 #   retry if  i > 2
 #   puts "Value of local variable is #{i}"
 # end
+
+
+# All of Ruby's enumerable methods can be recreated with simple for loops. For example, here
+# is "find."
+
+@words = ["capricious", "berry", "unicorn", "bag", "apple", "festering", "pretzel", "pencil"]
+@found = nil
+for word in @words
+  if word.length == 7
+    @found = word
+    break
+  end
+end
+
+# p @found
+
+
+words = ["capricious", "berry", "unicorn", "bag", "apple", "festering", "pretzel", "pencil"]
+
+found = words.find do |word|
+  word.length == 7
+end
+
+# p found
+
+
+# Here is "group_by:"
+
+words = ["sue", "alice", "steve", "sally", "adam", "fort", "tops", "dog", "cat"]
+grouped = Hash.new {|hash, key| hash[key] = []}
+for word in words
+  grouped[word.length].push(word)
+end
+
+# p grouped
+
+
+
+words = ["sue", "alice", "steve", "sally", "adam", "fort", "tops", "dog", "cat"]
+grouped = words.group_by do |word|
+  word.length
+end
+
+
+# p grouped
