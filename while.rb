@@ -33,28 +33,28 @@ end while number < 10
 
 bye_counter = 0
 ready_to_quit = false
-
-puts "HEY KID!"
-
-while ready_to_quit == false
-  input = gets.chomp
-  if input == ""
-    puts "WHAT?"
-  elsif input.downcase == input
-    puts "SPEAK UP KID!"
-  elsif "GOODBYE!" == input
-    if bye_counter == 0
-      bye_counter += 1
-      puts "LEAVING SO SOON?"
-    else
-      ready_to_quit = true
-    end
-  elsif input.upcase == input
-    puts "NO, NOT SINCE 1946!"
-  end
-
-end
-
-puts "LATER, SKATER!"
-
+#
+# puts "HEY KID!"
+#
+# while ready_to_quit == false
+#   input = gets.chomp
+#   if input == ""
+#     puts "WHAT?"
+#   elsif input.downcase == input
+#     puts "SPEAK UP KID!"
+#   elsif "GOODBYE!" == input
+#     if bye_counter == 0
+#       bye_counter += 1
+#       puts "LEAVING SO SOON?"
+#     else
+#       ready_to_quit = true
+#     end
+#   elsif input.upcase == input
+#     puts "NO, NOT SINCE 1946!"
+#   end
+#
+# end
+#
+# puts "LATER, SKATER!"
+#
 

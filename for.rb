@@ -6,7 +6,7 @@ animals = ['monkeys', 'giraffs', 'elephants', 'lions']
 
 
 for animal in animals
-  puts "Animal: #{animal}"
+  # puts "Animal: #{animal}"
 end
 
 
@@ -19,7 +19,7 @@ animals = ['monkeys', 'giraffs', 'elephants', 'lions']
 
 
 animals.each do |animal|
-  puts "Animal: #{animal}"
+  # puts "Animal: #{animal}"
 end
 
 
@@ -35,7 +35,7 @@ for word in @words
   end
 end
 
-p @found
+# p @found
 
 
 words = ["capricious", "berry", "unicorn", "bag", "apple", "festering", "pretzel", "pencil"]
@@ -44,5 +44,48 @@ found = words.find do |word|
   word.length == 7
 end
 
-p found
+# p found
 
+# Relevant statements:
+
+# Break terminates the internal loop
+
+for i in 0..5
+  if i > 2 then
+    break
+  end
+  # puts "Value of local variable is #{i}"
+end
+
+
+
+# Next jumps to the next iteration in the internal loop.
+
+
+for i in 10..15
+  if i < 12 then
+    next
+  end
+  # puts "Value of local variable is #{i}"
+end
+
+
+
+# Redo restarts the iteration of the internal loop without checkout loop conditions.
+
+# for i in 0..5
+#   if i < 2 then
+#     puts "Value of local variable is #{i}"
+#     redo
+#   end
+# end
+
+
+
+# Retry restarts the invocation of the iterator call.
+
+
+# for i in 1..5
+#   retry if  i > 2
+#   puts "Value of local variable is #{i}"
+# end
