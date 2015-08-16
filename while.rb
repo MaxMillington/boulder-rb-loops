@@ -1,7 +1,10 @@
 # Ruby has a 'while' loop that will execute a block of code while a condition
 # is true. Like recursive loops, they have the potential to go on forever. Moreover,
 # I find that it is easier to make mistakes with while loops. Thus, a 'for'
-# loop is usually preferable to a while loop.
+# loop is usually preferable to a while loop. However, a 'while' loop is
+# essential when you don't know how many times you will need to execute a loop. For
+# example, I might want to roll a die until I roll a six. It might take 1 roll to get
+# a six, it might take 100.
 
 
 
