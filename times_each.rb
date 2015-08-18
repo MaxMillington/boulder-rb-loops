@@ -17,7 +17,7 @@ end
 
 animals.each do |animal|
   if animal.length == 5
-    "#{animal.capitalize} is like any other animals in our collection."
+    "#{animal.capitalize} is like any other animal."
   else
     "#{animal.capitalize} is not like the other animals."
   end
