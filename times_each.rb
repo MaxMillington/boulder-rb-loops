@@ -2,6 +2,12 @@
   "I am really really hungry."
 end
 
+foods = ["corn", "lettuce", "tomato", "cucumber", "sprouts",
+          "beans", "kale", "quinoa", "coffee", "beets"]
+
+10.times do |i|
+  "I want to eat #{foods[i]}."
+end
 
 animals = ["hippo", "tiger", "elephant", "zebra"]
 
