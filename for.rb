@@ -47,7 +47,7 @@ end
 
 
 
-# Redo restarts the iteration of the internal loop without checkout loop conditions.
+# Redo restarts the iteration of the internal loop without checking loop conditions.
 
 # for i in 0..5
 #   if i < 2 then

@@ -27,12 +27,31 @@ end
 
 
 
+
+
+
+
+
+
+
+
+
+
 def second_sum_upto(q)
   return 1 if q == 1 #base case, what happens without it?
   second_sum_upto(q-1) + q
 end
 
 # p second_sum_upto(100)
+
+
+
+
+
+
+
+
+
 
 
 
@@ -51,6 +70,14 @@ end
 
 
 
+
+
+
+
+
+
+
+
 def plug(array, n)
   return array if n < 0
   array << n
@@ -61,6 +88,9 @@ end
 
 # array =  [], [7], [7,6], [7,6,5], [7,6,5,4], [7,6,5,4,3], [7,6,5,4,3,2], [7,6,5,4,3,2,1], [7,6,5,4,3,2,1,0]
 # n     =  7,  6,   5,     4,       3,         2,           1,             0
+
+
+
 
 
 
@@ -139,7 +169,12 @@ def fib_array(n)
   [0, 1, 1][n] ||= fib_array(n-2) + fib_array(n-1)
 end
 
-# p fib_array(20)
+# p fib_array(120)
+
+
+
+
+
 
 
 
@@ -159,7 +194,7 @@ def matrix_fibonacci(num)
   end
 end
 
-# p matrix_fibonacci(100000)
+# p matrix_fibonacci(1000)
 
 
 
@@ -178,7 +213,7 @@ def fib_jai(quantity)
 end
 
 
-# p fib_jai(1000)
+# p fib_jai(100)
 
 
 
@@ -196,7 +231,7 @@ def fib_calculate(number)
   numbers.last
 end
 
-# p fib_calculate(20)
+# p fib_calculate(1000000)
 
 
 

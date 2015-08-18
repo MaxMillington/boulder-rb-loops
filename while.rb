@@ -20,10 +20,10 @@ end
 
 number = 1
 
-begin
-  p "#{number} is a number less than 10."
-  number += 1
-end while number < 10
+# begin
+#   p "#{number} is a number less than 10."
+#   number += 1
+# end while number < 10
 
 
 # DEAF GRANDMA EXERCISE
